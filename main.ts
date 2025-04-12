@@ -5,6 +5,13 @@ const LeadingNumberPattern = new RegExp("^[0-9]+_(.*)$", "g");
 
 // Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
 if (import.meta.main) {
+  if (
+    !confirm("Are you ready to rename all mp3 files in the current directory?")
+  ) {
+    console.log("Aborted");
+    Deno.exit();
+  }
+
   // Get all mp3 files into an array
   const mp3FilesIterator = expandGlobSync("./*.mp3");
   const mp3FilesArray = await Array.fromAsync(mp3FilesIterator);
