@@ -1,12 +1,16 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@hugoalh/shuffle-array@^2.1.0": "2.1.0",
     "jsr:@std/assert@1": "1.0.12",
     "jsr:@std/fs@^1.0.16": "1.0.16",
     "jsr:@std/internal@^1.0.6": "1.0.6",
     "jsr:@std/path@^1.0.8": "1.0.8"
   },
   "jsr": {
+    "@hugoalh/shuffle-array@2.1.0": {
+      "integrity": "1c3a4d727b3c4519acc5818c4f3bcf6ee2ec3282772d5b50bb13605029ce2541"
+    },
     "@std/assert@1.0.12": {
       "integrity": "08009f0926dda9cbd8bef3a35d3b6a4b964b0ab5c3e140a4e0351fbf34af5b9a",
       "dependencies": [
@@ -28,6 +32,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@hugoalh/shuffle-array@^2.1.0",
       "jsr:@std/assert@1",
       "jsr:@std/fs@^1.0.16"
     ]
