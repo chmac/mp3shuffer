@@ -42,4 +42,6 @@ if (import.meta.main) {
     const newFileName = `${number}_${originalFileName}`;
     Deno.renameSync(walkEntry.name, newFileName);
   });
+
+  console.log(`Shuffled ${fileCount} mp3 files`);
 }
